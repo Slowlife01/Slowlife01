@@ -1,4 +1,4 @@
-## Hi there, I'm Slow! ❤
+# Hi there, I'm Slow! ❤
 
 I'm a Software Engineer primarily using JavaScript and TypeScript, and I am happy to learn more.
 
