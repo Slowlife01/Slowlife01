@@ -7,7 +7,7 @@
 
 ### The ways to contact me
 
-- <a href="https://discordapp.com/users/374905512661221377/">`SlowLife#9999`</a>
+- <a href="https://discordapp.com/users/374905512661221377/">`SlowLife#7489`</a>
 - <a href="mailto:slowlife1165@daum.net">`slowlife1165@daum.net`</a>
 
 #
