@@ -1,6 +1,11 @@
 # Hi there, I'm Slow! 🙀
 
-## Bio
-I'm a Software Engineer, wait, am I supposed to call myself this... well, at least I'm someone who likes coding and primarily using JavaScript and TypeScript, basically it's all JavaScript LOL, currenly learning Rust.
+- Primarily using JavaScript and TypeScript, basically it's all JavaScript lol.
+- I’m currently working on pretty much nothing because lol.
+- Currenly learning Rust? When I have time to do so yes.
 
-<a href="https://discordapp.com/users/374905512661221377/"><img src="https://img.shields.io/badge/discord-%7389D8.svg?&color=7289da&style=for-the-badge&logo=discord&logoColor=white"/>
+### The ways to contact me
+
+- <a href="https://discordapp.com/users/374905512661221377/">`SlowLife#9999`</a>
+- <a href="mailto:slowlife1165@daum.net">`slowlife1165@daum.net`</a>
+  
