@@ -3,7 +3,7 @@
 - Primarily using [JavaScript](https://www.javascript.com/) and [TypeScript](https://www.typescriptlang.org/).
 - I’m currently working on pretty much nothing lol.
 - I'm currently in love with [TypeScript](https://www.typescriptlang.org/).
-- IU, Yes IU
+- IU, Yes IU.
 
 ### The ways to contact me
 
