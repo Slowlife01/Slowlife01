@@ -1,8 +1,8 @@
 # Hi there, I'm Slow! 🙀
 
-- Primarily using JavaScript and TypeScript, basically it's all JavaScript lol.
+- Primarily using [JavaScript](https://www.javascript.com/) and [TypeScript](https://www.typescriptlang.org/).
 - I’m currently working on pretty much nothing lol.
-- Currenly learning Rust? When I have time to do so yes.
+- I'm currently in love with [TypeScript](https://www.typescriptlang.org/)
 
 ### The ways to contact me
 
