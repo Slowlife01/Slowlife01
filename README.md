@@ -3,7 +3,7 @@
 - Primarily using [JavaScript](https://www.javascript.com/) and [TypeScript](https://www.typescriptlang.org/).
 - I’m currently working on pretty much nothing lol.
 - I'm currently in love with [TypeScript](https://www.typescriptlang.org/).
-- [IU](https://www.google.com/search?q=Lee+Je+eun), Yes [IU](https://www.google.com/search?q=Lee+Je+eun).
+- [IU](https://www.google.com/search?q=Lee+Ji+eun), Yes [IU](https://www.google.com/search?q=Lee+Ji+eun).
 
 ### The ways to contact me
 
