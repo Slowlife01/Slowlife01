@@ -5,6 +5,8 @@
 - I'm currently in love with [TypeScript](https://www.typescriptlang.org/).
 - [IU](https://www.google.com/search?q=Lee+Ji+eun), Yes [IU](https://www.google.com/search?q=Lee+Ji+eun).
 
+Sorry there isn't much to see here most of my projects are closed source
+
 ### The ways to contact me
 
 - <a href="https://discordapp.com/users/374905512661221377/">`SlowLife#7489`</a>
