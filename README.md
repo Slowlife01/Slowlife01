@@ -3,7 +3,7 @@
 - Primarily using [JavaScript](https://www.javascript.com/) and [TypeScript](https://www.typescriptlang.org/).
 - I’m currently working on pretty much nothing lol.
 - I'm currently in love with [TypeScript](https://www.typescriptlang.org/).
-- [IU](https://www.google.com/search?q=Lee+Ji+eun), Yes [IU](https://www.google.com/search?q=Lee+Ji+eun).
+- [IU](http://edam-ent.com/html/sub03/sub03_0301_view), Yes [IU](http://edam-ent.com/html/sub03/sub03_0301_view).
 
 Sorry there isn't much to see here, most of my projects are closed source.
 
