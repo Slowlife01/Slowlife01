@@ -9,7 +9,7 @@ Sorry there isn't much to see here, most of my projects are closed source.
 
 ### The ways to contact me
 
-- <a href="https://discord.com/users/374905512661221377">`SlowLife#7489`</a>
+- <a href="https://discord.com/users/374905512661221377">`Slowlife#7489`</a>
 - <a href="mailto:slowlife1165@daum.net">`slowlife1165@daum.net`</a>
 
 #
