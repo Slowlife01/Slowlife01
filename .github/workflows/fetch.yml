@@ -17,5 +17,6 @@ jobs:
         run: npm install
       - name: Update Username
         env:
-          DISCORD_TOKEN: ${{ secrets.MONGO_IP }}
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+          GITHUB: ${{ secrets.GHTOKEN }}
         run: npm run start
