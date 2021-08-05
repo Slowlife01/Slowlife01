@@ -36,13 +36,16 @@ fetchUser().then((user) => {
   if (matchedUsername === `${user.username}#${user.discriminator}`)
     return console.log("No action needed - username is still same.");
 
-  octokit.repos.createOrUpdateFileContents({
-    owner: "SlowLife1661",
-    repo: "SlowLife1661",
-    path: "./README.md",
-    content: replaced,
-    message: "chore: update username",
-  });
+  octokit.repos
+    .createOrUpdateFileContents({
+      owner: "SlowLife1661",
+      repo: "SlowLife1661",
+      branch: "main",
+      path: "README.md",
+      message: "chore: update username",
+      content: replaced
+    })
+    .catch(process.exit);
 
   console.log("All done!");
 });
