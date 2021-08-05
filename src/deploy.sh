@@ -14,7 +14,6 @@ else
   SOURCE_TYPE="tag"
 fi
 
-echo "::[notice] # Checkout the repo so we can update the file"
 TARGET_BRANCH="main"
 
 if [ ! "$(git ls-remote origin $TARGET_BRANCH)" ]; then
