@@ -18,7 +18,8 @@ jobs:
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
           GITHUB: ${{ secrets.GITHUB }}
       run: npm run start
-    - uses: actions/checkout@v2
+    - name: Update File
+      uses: actions/checkout@v2
       with:
         persist-credentials: false
         fetch-depth: 0
