@@ -16,5 +16,5 @@ jobs:
       - name: Update Username
         env:
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
-          GITHUB: ${{ secrets.GHTOKEN }}
+          GITHUB: ${{ secrets.GITHUB }}
         run: npm run start
