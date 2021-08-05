@@ -1,0 +1,21 @@
+name: Fetch
+on:
+  schedule:
+    - cron:  '30 5,17 * * *'
+jobs:
+  UpdatePresences:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Use Node.js 12
+        uses: actions/setup-node@v2.3.0
+        with:
+          node-version: 12
+          cache: 'npm'
+      - name: Install Deps
+        run: npm install
+      - name: Update Username
+        env:
+          DISCORD_TOKEN: ${{ secrets.MONGO_IP }}
+        run: npm run start
