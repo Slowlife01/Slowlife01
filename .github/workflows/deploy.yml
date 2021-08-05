@@ -1,5 +1,8 @@
 name: Deploy
-on: workflow_dispatch
+on: 
+  workflow_dispatch
+  schedule:
+    - cron:  '30 5,17 * * *'
 jobs:
   UpdateUsername:
     runs-on: ubuntu-latest
