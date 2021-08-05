@@ -1,7 +1,5 @@
 name: Fetch
-on:
-  schedule:
-    - cron:  '30 5,17 * * *'
+on: workflow_dispatch
 jobs:
   UpdateUsername:
     runs-on: ubuntu-latest
@@ -18,5 +16,5 @@ jobs:
       - name: Update Username
         env:
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
-          GITHUB: ${{ secrets.GHTOKEN }}
+          GITHUB: ${{ secrets.GITHUB }}
         run: npm run start
