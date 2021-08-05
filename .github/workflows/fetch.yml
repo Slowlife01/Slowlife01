@@ -14,9 +14,9 @@ jobs:
     - name: Install Deps
       run: npm install
     - name: Update Username
-        env:
-          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
-          GITHUB: ${{ secrets.GITHUB }}
+      env:
+        DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+        GITHUB: ${{ secrets.GITHUB }}
       run: npm run start
     - name: Update File
       uses: actions/checkout@v2
