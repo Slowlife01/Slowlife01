@@ -1,7 +1,6 @@
 #!/bin/bash
 
 set -eo pipefail
-
 cd $GITHUB_WORKSPACE
 
 echo "::[notice] # Commit and push"
