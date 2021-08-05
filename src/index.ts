@@ -43,7 +43,7 @@ fetchUser().then(async (user) => {
 
   fs.writeFile("./README.md", replaced, () => {
     console.log(
-      `All done!\n Updated to ${user.username}#${user.discriminator}`
+      `All done!\nUpdated to ${user.username}#${user.discriminator}`
     );
   });
 
