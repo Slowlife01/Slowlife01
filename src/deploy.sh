@@ -16,15 +16,12 @@ fi
 
 echo "::[notice] # Checkout the repo so we can update the file"
 TARGET_BRANCH="main"
-git clone $REPO out
-cd out
 
 if [ ! "$(git ls-remote origin $TARGET_BRANCH)" ]; then
 	echo "::[notice] # Branch $TARGET_BRANCH not found, exiting action"
 	exit
 fi
 
-git checkout $TARGET_BRANCH
 echo "::[notice] # Commit and push"
 git add .
 git config user.name "SlowLife1661"
