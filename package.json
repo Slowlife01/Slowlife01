@@ -17,9 +17,13 @@
   },
   "homepage": "https://github.com/SlowLife1661/SlowLife1661#readme",
   "dependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/exec": "^1.1.0",
+    "@actions/io": "^1.1.1",
     "@octokit/rest": "^18.9.0",
     "fs": "0.0.1-security",
     "node-fetch": "^2.6.1",
+    "path": "^0.12.7",
     "typescript": "^4.3.5"
   },
   "devDependencies": {

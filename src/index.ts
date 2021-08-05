@@ -2,9 +2,14 @@ import fetch from "node-fetch";
 import { Octokit } from "@octokit/rest";
 import fs from "fs";
 
+import { resolve } from "path";
+import { exec } from "@actions/exec";
+import { which } from "@actions/io";
+import { setFailed } from "@actions/core";
+
 const octokit = new Octokit({
   auth: process.env.GITHUB,
-  userAgent: "SlowLife v1.0.0"
+  userAgent: "SlowLife v1.0.0",
 });
 
 const beseURL = "https://discord.com/api/v9/users/374905512661221377";
@@ -20,14 +25,14 @@ const fetchUser = async () => {
       method: "GET",
       headers: {
         Authorization: process.env.DISCORD_TOKEN,
-      }
+      },
     })
   ).json();
 
   return response;
 };
 
-fetchUser().then((user) => {
+fetchUser().then(async (user) => {
   const replaced = file.replace(
     matchedUsername,
     `${user.username}#${user.discriminator}`
@@ -41,4 +46,14 @@ fetchUser().then((user) => {
       `All done!\n Updated to ${user.username}#${user.discriminator}`
     );
   });
+
+  try {
+    await exec(await which("bash", true), ["src/deploy.sh"], {
+      cwd: resolve(__dirname, ".."),
+    });
+
+    console.log("Updated the file!")
+  } catch (error) {
+    setFailed(error.message);
+  }
 });
