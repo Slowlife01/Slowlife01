@@ -1,7 +1,5 @@
 name: Fetch
-on:
-  schedule:
-    - cron:  '30 5,17 * * *'
+on: workflow_dispatch
 jobs:
   UpdateUsername:
     runs-on: ubuntu-latest
