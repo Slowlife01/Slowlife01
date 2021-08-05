@@ -28,8 +28,6 @@ const fetchUser = async () => {
 };
 
 fetchUser().then((user) => {
-  console.log(`${user.username}#${user.discriminator}`, file);
-
   const replaced = file.replace(
     matchedUsername,
     `${user.username}#${user.discriminator}`
@@ -38,15 +36,9 @@ fetchUser().then((user) => {
   if (matchedUsername === `${user.username}#${user.discriminator}`)
     return console.log("No action needed - username is still same.");
 
-  octokit.repos
-    .createOrUpdateFileContents({
-      owner: "SlowLife1661",
-      repo: "SlowLife1661",
-      branch: "main",
-      path: "README.md",
-      message: "chore: update username",
-      content: replaced
-    })
-    .then(() => console.log(`All done!\n Updated to ${user.username}#${user.discriminator}`))
-    .catch(process.exit);
+  fs.writeFile("./README.md", replaced, () => {
+    console.log(
+      `All done!\n Updated to ${user.username}#${user.discriminator}`
+    );
+  });
 });
