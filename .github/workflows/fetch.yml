@@ -2,7 +2,6 @@ name: Fetch
 on: workflow_dispatch
 jobs:
   UpdateUsername:
-    needs: UpdateUsername
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Project
