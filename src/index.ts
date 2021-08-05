@@ -39,7 +39,7 @@ fetchUser().then((user) => {
   octokit.repos.createOrUpdateFileContents({
     owner: "SlowLife1661",
     repo: "SlowLife1661",
-    path: "./README.md",
+    path: "README.md",
     content: replaced,
     message: "chore: update username",
   });
