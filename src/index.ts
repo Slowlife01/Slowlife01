@@ -28,6 +28,8 @@ const fetchUser = async () => {
 };
 
 fetchUser().then((user) => {
+  console.log(`${user.username}#${user.discriminator}`, file);
+
   const replaced = file.replace(
     matchedUsername,
     `${user.username}#${user.discriminator}`
