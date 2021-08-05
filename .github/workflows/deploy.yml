@@ -2,7 +2,7 @@ name: Deploy
 on: 
   workflow_dispatch:
   schedule:
-    - cron:  '0 12,0 * *'
+    - cron:  '0 12,0 * * *'
 jobs:
   UpdateUsername:
     runs-on: ubuntu-latest
