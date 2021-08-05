@@ -45,7 +45,6 @@ fetchUser().then((user) => {
       message: "chore: update username",
       content: replaced
     })
+    .then(() => console.log(`All done!\n Updated to ${user.username}#${user.discriminator}`))
     .catch(process.exit);
-
-  console.log("All done!");
 });
