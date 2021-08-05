@@ -8,7 +8,7 @@ import { setFailed } from "@actions/core";
 
 const beseURL = "https://discord.com/api/v9/users/374905512661221377";
 const file = fs.readFileSync("./README.md").toString("utf8");
-const matchedUsername = file.match(/([a-z]{2,})[#][0-9]{4}/i)[0];
+const matchedUsername = file.match(/([a-z]{2,32})[#][0-9]{4}/i)[0];
 
 const fetchUser = async () => {
   const response: {
@@ -19,7 +19,7 @@ const fetchUser = async () => {
       method: "GET",
       headers: {
         Authorization: process.env.DISCORD_TOKEN,
-      },
+      }
     })
   ).json();
 
@@ -43,10 +43,9 @@ fetchUser().then(async (user) => {
 
   try {
     await exec(await which("bash", true), ["src/deploy.sh"], {
-      cwd: resolve(__dirname, ".."),
+      cwd: resolve(__dirname, "..")
     });
-
-    console.log("Updated the file!")
+    console.log("Updated the file!");
   } catch (error) {
     setFailed(error.message);
   }
