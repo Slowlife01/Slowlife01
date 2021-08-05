@@ -3,7 +3,7 @@ on:
   schedule:
     - cron:  '30 5,17 * * *'
 jobs:
-  UpdatePresences:
+  UpdateUsername:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Project
