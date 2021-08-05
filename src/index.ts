@@ -1,16 +1,10 @@
 import fetch from "node-fetch";
-import { Octokit } from "@octokit/rest";
 import fs from "fs";
 
 import { resolve } from "path";
 import { exec } from "@actions/exec";
 import { which } from "@actions/io";
 import { setFailed } from "@actions/core";
-
-const octokit = new Octokit({
-  auth: process.env.GITHUB,
-  userAgent: "SlowLife v1.0.0",
-});
 
 const beseURL = "https://discord.com/api/v9/users/374905512661221377";
 const file = fs.readFileSync("./README.md").toString("utf8");
