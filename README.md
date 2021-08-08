@@ -1,6 +1,6 @@
 # Hi there, I'm Slow! 🙀
 
-- Primarily using [JavaScript](https://www.javascript.com/) and [TypeScript](https://www.typescriptlang.org/).
+- Primarily using [TypeScript](https://www.typescriptlang.org/).
 - I’m currently working on pretty much nothing lol.
 - I'm currently in love with [TypeScript](https://www.typescriptlang.org/).
 - [IU](http://edam-ent.com/html/sub03/sub03_0301_view), Yes [IU](http://edam-ent.com/html/sub03/sub03_0301_view).
