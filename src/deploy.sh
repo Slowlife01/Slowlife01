@@ -6,7 +6,7 @@ cd $GITHUB_WORKSPACE
 echo "[LOG] Executing bash script"
 
 git add .
-git config user.name "SlowLife1661"
+git config user.name "Slowlife01"
 git config user.email "slowlife1165@gmail.com"
 
 echo "[LOG] Committing"
