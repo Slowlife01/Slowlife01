@@ -37,7 +37,7 @@ fetchUser().then(async (user) => {
 
   fs.writeFile("./README.md", replaced, () => {
     console.log(
-      `All done!\nUpdated to ${user.username}#${user.discriminator}`
+      "[LOG] Updated the file, waiting for bash to be executed."
     );
   });
 
@@ -45,7 +45,7 @@ fetchUser().then(async (user) => {
     await exec(await which("bash", true), ["src/deploy.sh"], {
       cwd: resolve(__dirname, "..")
     });
-    console.log("Updated the file!");
+    console.log("[LOG] Successfully committed and pushed.");
   } catch (error) {
     setFailed(error.message);
   }
