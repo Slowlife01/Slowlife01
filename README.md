@@ -3,7 +3,7 @@
 - Primarily using [TypeScript](https://www.typescriptlang.org).
 - I’m currently learning [Elixir](https://elixir-lang.org) *for fun*, and working on pretty much nothing.
 - In love with [TypeScript](https://www.typescriptlang.org).
-- As you might already have noticed I'm pretty into Korean culture.
+- As you might already have noticed I'm pretty much into Korean culture.
 - Just incase you wanna know my IRL nickname, It is *Blue*.
 
 Sorry there isn't much to see here, most of my projects are closed source.
