@@ -1,4 +1,4 @@
-name: Deploy
+name: Update
 on: 
   workflow_dispatch:
   schedule:
