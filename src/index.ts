@@ -40,7 +40,7 @@ fetchUser().then(async (user) => {
   });
 
   try {
-    await exec(await which("bash", true), ["src/deploy.sh"], {
+    await exec(await which("bash", true), ["src/update.sh"], {
       cwd: resolve(__dirname, "..")
     });
     console.log("[LOG] Successfully committed and pushed.");
