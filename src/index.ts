@@ -31,7 +31,7 @@ fetchUser().then(async (user) => {
   const replaced = file.replace(matchedUsername, username);
 
   if (matchedUsername === username)
-    return console.log("No action needed - username is still same.");
+    return console.log("No action needed - username is still the same.");
 
   fs.writeFile("./README.md", replaced, () => {
     console.log(
