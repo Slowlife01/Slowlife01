@@ -1,4 +1,3 @@
-import * as fetch from "node-fetch";
 import fs from "fs";
 
 import { resolve } from "path";
@@ -11,6 +10,7 @@ const file = fs.readFileSync("./README.md").toString("utf8");
 const matchedUsername = file.match(/([a-z]{2,32})[#][0-9]{4}/i)[0];
 
 const fetchUser = async () => {
+  const fetch = await import("node-fetch");
   const response: {
     username?: string;
     discriminator?: string;
