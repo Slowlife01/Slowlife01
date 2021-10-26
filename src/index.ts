@@ -12,8 +12,8 @@ const matchedUsername = file.match(/([a-z]{2,32})[#][0-9]{4}/i)[0];
 
 const fetchUser = async () => {
   const response: {
-    username: string;
-    discriminator: string;
+    username?: string;
+    discriminator?: string;
   } = await (
     await fetch(`${beseURL}/users/374905512661221377`, {
       method: "GET",
