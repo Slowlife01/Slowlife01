@@ -1,21 +1,13 @@
 {
-  "name": "slowlife1661",
+  "name": "readme",
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
     "start": "tsc && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SlowLife1661/SlowLife1661.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SlowLife1661/SlowLife1661/issues"
-  },
-  "homepage": "https://github.com/SlowLife1661/SlowLife1661#readme",
   "dependencies": {
     "@actions/core": "^1.6.0",
     "@actions/exec": "^1.1.0",
