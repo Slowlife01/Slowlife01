@@ -27,6 +27,6 @@
     "typescript": "^4.4.4"
   },
   "devDependencies": {
-    "@types/node-fetch": "^3.0.3"
+    "@types/node": "^16.11.6"
   }
 }
