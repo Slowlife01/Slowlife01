@@ -14,3 +14,5 @@ git commit -m "refactor: sync username" || true
 
 echo "[LOG] Pushing"
 git push origin "main"
+
+echo "[LOG] Successfully committed and pushed"
