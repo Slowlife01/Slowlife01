@@ -1,6 +1,5 @@
 #!/bin/bash
 
-set -eo pipefail
 cd $GITHUB_WORKSPACE
 
 echo "[LOG] Executing bash script"
