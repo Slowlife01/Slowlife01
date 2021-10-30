@@ -3,7 +3,7 @@ require "json"
 
 file = File.read("./README.md")
 baseURL = "https://discord.com/api/v9"
-matched = file.match(/([a-z]{2,32})[#][0-9]{4}/i)[0];
+matched = file.match(/([a-z]{2,32})[#][0-9]{4}/i)[0]
 
 define_method :fetchUser do
     response = HTTParty.get("#{baseURL}/users/374905512661221377", :headers => {
@@ -14,7 +14,8 @@ define_method :fetchUser do
 end
 
 user = fetchUser()
-username = "#{user["username"]}##{user["discriminator"]}"
+username = user["username"] << "#" << user["discriminator"]
+
 replaced = file.gsub(matched, username)
 
 if (matched == username) 
