@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: Checkout Project
       uses: actions/checkout@v2.3.4
-    - name: Use Ruby 3.0.2
+    - name: Use Ruby and Install Dependencies
       uses: ruby/setup-ruby@v1.84.0
       with:
         ruby-version: 3.0.2
