@@ -1,4 +1,4 @@
-name: Update
+name: SyncUsername
 on: 
   workflow_dispatch:
   schedule:
