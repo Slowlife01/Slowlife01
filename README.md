@@ -1,10 +1,14 @@
 # Hi there, I'm Slow 🙀
 
-- Primarily using [TypeScript](https://www.typescriptlang.org).
 - Working on pretty much nothing.
 - In love with [TypeScript](https://www.typescriptlang.org).
 - As you might already have noticed I'm pretty much into Korean culture.
 - Just incase you wanna know my IRL nickname, It is *Blue*.
+
+## What languages do I use?
+- [TypeScript](https://www.typescriptlang.org)
+- [Golang](https://go.dev)
+- [Ruby](https://www.ruby-lang.org)
 
 ## The ways to contact me..?
 ###### Not sure why would you contact me, but sure whatever.
