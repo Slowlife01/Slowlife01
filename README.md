@@ -7,8 +7,9 @@
 
 ## What languages do I use?
 - [TypeScript](https://www.typescriptlang.org)
-- [Golang](https://go.dev)
+- [Elixir](https://elixir-lang.org/)
 - [Ruby](https://www.ruby-lang.org)
+- [Go](https://go.dev)
 
 ## The ways to contact me..?
 ###### Not sure why would you contact me, but sure whatever.
