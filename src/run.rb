@@ -21,7 +21,7 @@ define_method :fetchContent do
           "Authorization" => "Bearer #{ENV["GITHUB"]}"
         },
         :body => JSON.generate({
-          :query: => %{
+          :query => %{
             repository(owner: "PreMiD", name: "Presences") {
               discussion(number: 4658) {
                 body
