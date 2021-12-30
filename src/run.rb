@@ -2,20 +2,20 @@ require "httpx"
 require "json"
 
 readmeFile = File.read("./README.md")
-contentFile = File.read("./data/content.md")
+serviceRequestFile = File.read("./data/4658.md")
+featureRequestFile = File.read("./data/4660.md")
 
-baseURL = "https://discord.com/api/v9"
 matched = readmeFile.match(/([a-z]{2,32})[#][0-9]{4}/i)[0]
 
-define_method :fetchUser do
-    response = HTTPX.get("#{baseURL}/users/374905512661221377", :headers => {
+def fetchUser do
+    response = HTTPX.get("https://discord.com/api/v9/users/374905512661221377", :headers => {
         "Authorization" => "Bot #{ENV["DISCORD_TOKEN"]}"
     })
 
     return JSON.parse(response.body)
 end
 
-define_method :fetchContent do
+def fetchContent (id) do
     response = HTTPX.post("https://api.github.com/graphql",
         :headers => {
           "Authorization" => "Bearer #{ENV["GITHUB"]}"
@@ -23,7 +23,7 @@ define_method :fetchContent do
         :body => JSON.generate({
           :query => %{{
             repository(owner: "PreMiD", name: "Presences") {
-              discussion(number: 4658) {
+              discussion(number: #{id}) {
                 body
               }
             }
@@ -31,7 +31,7 @@ define_method :fetchContent do
         }
     }))
 
-    return JSON.parse(response.body)
+    return JSON.parse(response.body)["data"]["repository"]["discussion"]["body"]
 end
 
 user = fetchUser()
@@ -46,11 +46,13 @@ else
     exec(File.read(File.join(__dir__, "update.sh")))
 end
 
-content = fetchContent()["data"]["repository"]["discussion"]["body"]
+serviceRequest = fetchContent(4658)
+featureRequest  = fetchContent(4660)
 
-if (content == contentFile)
+if (serviceRequest == serviceRequestFile and featureRequest == featureRequestFile)
     puts "No action needed - content is still the same."
 else
-    File.write("./data/content.md", content)
+    File.write("./data/4658.md", serviceRequest)
+    File.write("./data/4660.md", featureRequest)
     exec(File.read(File.join(__dir__, "update.sh")))
 end
