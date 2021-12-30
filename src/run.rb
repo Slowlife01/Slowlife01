@@ -2,7 +2,7 @@ require "httpx"
 require "json"
 
 readmeFile = File.read("./README.md")
-contentFile = File.read("./PreMiD/content.txt")
+contentFile = File.read("./PreMiD/content.md")
 
 baseURL = "https://discord.com/api/v9"
 matched = readmeFile.match(/([a-z]{2,32})[#][0-9]{4}/i)[0]
@@ -51,6 +51,6 @@ content = fetchContent()["data"]["repository"]["discussion"]["body"]
 if (content == contentFile)
     puts "No action needed - content is still the same."
 else
-    File.write("./PreMiD/content.txt", content)
+    File.write("./PreMiD/content.md", content)
     exec(File.read(File.join(__dir__, "update.sh")))
 end
