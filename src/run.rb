@@ -18,8 +18,7 @@ end
 define_method :fetchContent do
     response = HTTParty.post("http://api.github.com/graphql", 
         :headers => {
-          "Authorization" => "Bearer #{ENV["GITHUB"]}",
-          "Content-type" => "application/json"
+          "Authorization" => "Bearer #{ENV["GITHUB"]}"
         },
         :body => JSON.generate({
           :query => %{
@@ -31,7 +30,7 @@ define_method :fetchContent do
           }
         }))
 
-    return JSON.parse(response.body).data.body
+    return JSON.parse(response.body)["data"]["body"]
 end
 
 user = fetchUser()
