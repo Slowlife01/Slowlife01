@@ -1,12 +1,6 @@
 require "httpx"
 require "json"
 
-readmeFile = File.read("./README.md")
-serviceRequestFile = File.read("./data/4658.md")
-featureRequestFile = File.read("./data/4660.md")
-
-matched = readmeFile.match(/([a-z]{2,32})[#][0-9]{4}/i)[0]
-
 def fetchUser
     response = HTTPX.get("https://discord.com/api/v9/users/374905512661221377", :headers => {
         "Authorization" => "Bot #{ENV["DISCORD_TOKEN"]}"
@@ -34,10 +28,18 @@ def fetchContent (id)
     return JSON.parse(response.body)["data"]["repository"]["discussion"]["body"]
 end
 
+readmeFile = File.read("./README.md")
+serviceRequestFile = File.read("./data/4658.md")
+featureRequestFile = File.read("./data/4660.md")
+
+matched = readmeFile.match(/([a-z]{2,32})[#][0-9]{4}/i)[0]
+
 user = fetchUser()
 username = user["username"] << "#" << user["discriminator"]
-
 replaced = readmeFile.gsub(matched, username)
+
+serviceRequest = fetchContent(4658)
+featureRequest  = fetchContent(4660)
 
 if (matched == username) 
     puts "No action needed - username is still the same."
@@ -45,9 +47,6 @@ else
     File.write("./README.md", replaced)
     exec(File.read(File.join(__dir__, "update.sh")))
 end
-
-serviceRequest = fetchContent(4658)
-featureRequest  = fetchContent(4660)
 
 if (serviceRequest == serviceRequestFile and featureRequest == featureRequestFile)
     puts "No action needed - content is still the same."
