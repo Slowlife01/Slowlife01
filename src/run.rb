@@ -21,15 +21,15 @@ define_method :fetchContent do
           "Authorization" => "Bearer #{ENV["GITHUB"]}",
           "Content-type" => "application/json"
         },
-        :body => {
+        :body => JSON.generate({
           :query => %{
             repository(owner: "PreMiD", name: "Presences") {
-              discussion(4658) {
+              discussion(number: 4658) {
                 body
               }
             }
           }
-        })
+        }))
 
     return JSON.parse(response.body).data.body
 end
