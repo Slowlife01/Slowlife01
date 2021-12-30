@@ -1,5 +1,7 @@
 <script>
-  fetch("https://raw.githubusercontent.com/Slowlife01/Slowlife01/main/data/content.md")
+  const params = URLSearchParams(location.search);
+ 
+  fetch(`https://raw.githubusercontent.com/Slowlife01/Slowlife01/main/data/${params.get("from")}.md`)
     .then(res => res.text())
-    .then(text => window.location.replace(`https://github.com/PreMiD/Presences/discussions/new?category=Presence-Requests&body=${encodeURIComponent(text)}`));
+    .then(text => location.replace(`https://github.com/PreMiD/Presences/discussions/new?category=Presence-Requests&body=${encodeURIComponent(text)}`));
 </script>
