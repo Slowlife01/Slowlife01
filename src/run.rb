@@ -18,7 +18,7 @@ end
 define_method :fetchContent do
     response = HTTParty.post("http://api.github.com/graphql", 
         :headers => {
-          "Authorization" => ENV["GITHUB"]
+          "Authorization" => "Bearer #{ENV["GITHUB"]}"
         },
         :body => %{
           query {
