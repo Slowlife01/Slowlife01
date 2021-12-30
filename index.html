@@ -1,11 +1,12 @@
 <script>
   const params = new URLSearchParams(location.search);
+  const from = params.get("from");
  
-  fetch(`https://raw.githubusercontent.com/Slowlife01/Slowlife01/main/data/${params.get("from")}.md`)
+  fetch(`https://raw.githubusercontent.com/Slowlife01/Slowlife01/main/data/${from}.md`)
     .then(res => res.text())
     .then(text => {
       const body = text.match(/```markdown((.|\n|\r)*)```/)[1].trim();
-      const category = params.get("from") === "4658" ? "Requests" : "Features";
+      const category = from === "4658" ? "Requests" : "Features";
       
       location.replace(`https://github.com/PreMiD/Presences/discussions/new?category=Presence-${category}&body=${encodeURIComponent(body)}`);
     });
