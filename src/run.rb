@@ -30,6 +30,8 @@ define_method :fetchContent do
           }
        })
 
+    puts JSON.parse(response.body)
+
     return JSON.parse(response.body)
 end
 
