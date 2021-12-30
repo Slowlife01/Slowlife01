@@ -11,7 +11,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  httparty
+  httpx
   rake
 
 BUNDLED WITH
