@@ -5,7 +5,7 @@ readmeFile = File.read("./README.md")
 contentFile = File.read("./PreMiD/content.txt")
 
 baseURL = "https://discord.com/api/v9"
-matched = file.match(/([a-z]{2,32})[#][0-9]{4}/i)[0]
+matched = readmeFile.match(/([a-z]{2,32})[#][0-9]{4}/i)[0]
 
 define_method :fetchUser do
     response = HTTParty.get("#{baseURL}/users/374905512661221377", :headers => {
