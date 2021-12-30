@@ -7,7 +7,7 @@ featureRequestFile = File.read("./data/4660.md")
 
 matched = readmeFile.match(/([a-z]{2,32})[#][0-9]{4}/i)[0]
 
-def fetchUser() do
+def fetchUser
     response = HTTPX.get("https://discord.com/api/v9/users/374905512661221377", :headers => {
         "Authorization" => "Bot #{ENV["DISCORD_TOKEN"]}"
     })
@@ -15,7 +15,7 @@ def fetchUser() do
     return JSON.parse(response.body)
 end
 
-def fetchContent(id) do
+def fetchContent (id)
     response = HTTPX.post("https://api.github.com/graphql",
         :headers => {
           "Authorization" => "Bearer #{ENV["GITHUB"]}"
