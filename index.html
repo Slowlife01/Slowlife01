@@ -5,6 +5,8 @@
     .then(res => res.text())
     .then(text => {
       const body = text.match(/```markdown((.|\n|\r)*)```/)[1].trim();
-      location.replace(`https://github.com/PreMiD/Presences/discussions/new?category=Presence-Requests&body=${encodeURIComponent(body)}`);
+      const category = params.get("from") === "4658" ? "Requests" : "Features";
+      
+      location.replace(`https://github.com/PreMiD/Presences/discussions/new?category=Presence-${category}&body=${encodeURIComponent(body)}`);
     });
 </script>
