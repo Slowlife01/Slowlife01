@@ -52,7 +52,13 @@ featureRequest  = fetchContent(4660)
 if (serviceRequest == serviceRequestFile and featureRequest == featureRequestFile)
     puts "No action needed - content is still the same."
 else
-    File.write("./data/4658.md", serviceRequest)
-    File.write("./data/4660.md", featureRequest)
+    if (serviceRequest != serviceRequestFil)
+        File.write("./data/4658.md", serviceRequest)
+    end
+    
+    if (featureRequest != featureRequestFile) 
+        File.write("./data/4660.md", featureRequest)
+    end
+    
     exec(File.read(File.join(__dir__, "update.sh")))
 end
