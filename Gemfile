@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
-gem 'httparty'
+gem 'httpx'
 gem 'rake'
