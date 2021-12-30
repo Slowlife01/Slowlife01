@@ -16,7 +16,7 @@ define_method :fetchUser do
 end
 
 define_method :fetchContent do
-    response = HTTParty.get("http://api.github.com/graphql", 
+    response = HTTParty.post("http://api.github.com/graphql", 
         :headers => {
           "Authorization" => ENV["GITHUB"]
         },
