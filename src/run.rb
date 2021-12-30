@@ -20,7 +20,7 @@ define_method :fetchContent do
         :headers => {
           "Authorization" => "Bearer #{ENV["GITHUB"]}"
         },
-        :body => %{
+        :body => %{{
           "query": {
             query {
               repository(owner: "PreMiD, name: "Presences") {
@@ -30,7 +30,7 @@ define_method :fetchContent do
               }
             }
           }
-        })
+        }})
 
     return JSON.parse(response.body)["data"]["body"]
 end
