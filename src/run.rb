@@ -36,7 +36,7 @@ end
 user = fetchUser()
 username = user["username"] << "#" << user["discriminator"]
 
-replaced = readme.gsub(matched, username)
+replaced = readmeFile.gsub(matched, username)
 
 if (matched == username) 
     puts "No action needed - username is still the same."
