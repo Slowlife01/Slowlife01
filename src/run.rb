@@ -32,7 +32,7 @@ define_method :fetchContent do
           }
         }})
 
-    return JSON.parse(response.body)["data"]["body"]
+    return JSON.parse(response.body)
 end
 
 user = fetchUser()
@@ -47,7 +47,7 @@ else
     exec(File.read(File.join(__dir__, "update.sh")))
 end
 
-content = fetchContent()
+content = fetchContent()["data"]["body"]
 
 if (content == contentFile)
     puts "No action needed - content is still the same."
