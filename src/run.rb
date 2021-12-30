@@ -28,7 +28,7 @@ define_method :fetchContent do
               }
             }
           }
-        })
+        }))
 
     return JSON.parse(response.body)
 end
