@@ -2,7 +2,7 @@ name: SyncContentAndUsername
 on: 
   workflow_dispatch:
   schedule:
-    - cron:  '00,30 * * * *'
+    - cron:  '0,30 * * * *'
 jobs:
   UpdateData:
     runs-on: ubuntu-latest
