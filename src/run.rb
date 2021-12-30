@@ -12,7 +12,7 @@ define_method :fetchUser do
         "Authorization" => "Bot #{ENV["DISCORD_TOKEN"]}"
     })
 
-    return JSON.parse(response.body)
+    return JSON.parse(response.body).data.body
 end
 
 define_method :fetchContent do
@@ -46,8 +46,6 @@ else
 end
 
 content = fetchContent()
-
-puts content
 
 if (content == contentFile)
     puts "No action needed - content is still the same."
