@@ -1,5 +1,5 @@
 <script>
-  const params = URLSearchParams(location.search);
+  const params = new URLSearchParams(location.search);
  
   fetch(`https://raw.githubusercontent.com/Slowlife01/Slowlife01/main/data/${params.get("from")}.md`)
     .then(res => res.text())
