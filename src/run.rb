@@ -32,19 +32,19 @@ readmeFile = File.read("./README.md")
 serviceRequestFile = File.read("./data/4658.md")
 featureRequestFile = File.read("./data/4660.md")
 
-matched = readmeFile.match(/([a-z]{2,32})[#][0-9]{4}/i)[0]
+oldUsername = readmeFile.match(/([a-z]{2,32})[#][0-9]{4}/i)[0]
 
 user = fetchUser()
 username = user["username"] << "#" << user["discriminator"]
-replaced = readmeFile.gsub(matched, username)
+newUsername = readmeFile.gsub(oldUsername, username)
 
 serviceRequest = fetchContent(4658)
 featureRequest  = fetchContent(4660)
 
-if (matched == username) 
+if (oldUsername == username) 
     puts "No action needed - username is still the same."
 else
-    File.write("./README.md", replaced)
+    File.write("./README.md", newUsername)
     exec(File.read(File.join(__dir__, "update.sh")))
 end
 
