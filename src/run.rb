@@ -52,7 +52,7 @@ featureRequest  = fetchContent(4660)
 if (serviceRequest == serviceRequestFile and featureRequest == featureRequestFile)
     puts "No action needed - content is still the same."
 else
-    if (serviceRequest != serviceRequestFil)
+    if (serviceRequest != serviceRequestFile)
         File.write("./data/4658.md", serviceRequest)
     end
     
