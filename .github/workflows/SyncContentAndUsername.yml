@@ -17,4 +17,5 @@ jobs:
     - name: Update data
       env:
         DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+        GITHUB: ${{ secrets.GITHUB }}
       run: bundler exec rake
