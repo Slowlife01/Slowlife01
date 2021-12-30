@@ -30,8 +30,6 @@ define_method :fetchContent do
           }
        })
 
-    puts JSON.parse(response.body)
-
     return JSON.parse(response.body)
 end
 
@@ -48,6 +46,8 @@ else
 end
 
 content = fetchContent()
+
+puts content
 
 if (content == contentFile)
     puts "No action needed - content is still the same."
