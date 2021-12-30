@@ -12,7 +12,7 @@ define_method :fetchUser do
         "Authorization" => "Bot #{ENV["DISCORD_TOKEN"]}"
     })
 
-    return JSON.parse(response.body).data.body
+    return JSON.parse(response.body)
 end
 
 define_method :fetchContent do
@@ -30,7 +30,7 @@ define_method :fetchContent do
           }
        })
 
-    return JSON.parse(response.body)
+    return JSON.parse(response.body).data.body
 end
 
 user = fetchUser()
