@@ -1,9 +1,9 @@
 <div>We will bring you back shortly!</div>
-<span id="text">Fetching the template</span>
-<span id="dots"></span>
+<span id="text">Fetching the template...</span>
 <style>
   html {
     background-color: rgb(81,75,224);
+    font-family: cursive;
   }
 
   div, #text {
@@ -18,7 +18,6 @@
     
     color: white;
     font-size: 35px;
-    font-family: cursive
   }
   
   #text {
@@ -26,58 +25,6 @@
     
     color: #a1a1e6;
     font-size: 28px;
-    font-family: cursive
-  }
-
-  #dots {
-    position: fixed;
-    top: 60%;
-    left: 50%;
-    width: 4px;
-    height: 4px;
-    border-radius: 5px;
-    background-color: #9880ff;
-    color: #9880ff;
-    animation: dotAnimation .3s infinite linear alternate;
-    animation-delay: .1s;
-  }
-
-  #dots::before, #dots::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0;
-  }
-
-  #dots::before {
-    left: -10px;
-    width: 4px;
-    height: 4px;
-    border-radius: 5px;
-    background-color: #a1a1e6;
-    color: #a1a1e6;
-    animation: dotAnimation .3s infinite alternate;
-  }
-
-  #dots::after {
-    left: 10px;
-    width: 4px;
-    height: 4px;
-    border-radius: 5px;
-    background-color: #9880ff;
-    color: #9880ff;
-    animation: dotAnimation .3s infinite alternate;
-    animation-delay: .3s;
-  }
-
-  @keyframes dotAnimation {
-    0% {
-      background-color: #9880ff;
-    }
-    50%,
-    100% {
-      background-color: #ebe6ff;
-    }
   }
 </style>
 <script>
