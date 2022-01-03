@@ -1,4 +1,4 @@
-name: SyncContentAndUsername
+name: SyncUsername
 on: 
   workflow_dispatch:
   schedule:
