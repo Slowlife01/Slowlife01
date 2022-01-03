@@ -2,8 +2,8 @@
 
 - Working on pretty much nothing.
 - In love with [TypeScript](https://www.typescriptlang.org).
-- As you might already have noticed I'm pretty much into Korean culture.
 - Just incase you wanna know my IRL nickname, It is *Blue*.
+- *Would appreciate kdrama recommendation, https://mydramalist.com/profile/Slow_Life*.
 
 ## What languages do I use?
 - [TypeScript](https://www.typescriptlang.org)
