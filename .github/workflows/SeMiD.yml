@@ -4,7 +4,9 @@ on:
     types: created
 jobs:
   handle_commands:
-    name: Handle Commands
+    name: Handle commands
     runs-on: ubuntu-latest
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, @Slowlife01)
-    run: echo ${{ github.event.issue.pull_request }}
+    steps:
+      - name: Execute command 
+        run: echo ${{ github.event.issue.pull_request }}
