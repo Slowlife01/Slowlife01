@@ -1,0 +1,10 @@
+name: SeMiD
+on:
+  issue_comment:
+    types: created
+jobs:
+  handle_commands:
+    name: Handle Commands
+    runs-on: ubuntu-latest
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, @Slowlife01)
+    run: echo ${{ github.event.issue.pull_request }}
