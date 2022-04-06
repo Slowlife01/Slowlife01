@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     http-2-next (0.5.0)
-    httpx (0.19.4)
+    httpx (0.19.6)
       http-2-next (>= 0.4.1)
     rake (13.0.6)
 
