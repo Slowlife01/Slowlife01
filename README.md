@@ -1,8 +1,6 @@
 # Hi there, I'm Slow 🙀
 
 - Working on pretty much nothing.
-- In love with [TypeScript](https://www.typescriptlang.org).
-- Just incase you wanna know my IRL nickname, It is *Blue*.
 - *Would appreciate kdrama recommendation, https://mydramalist.com/profile/Slow_Life*.
 
 ## What languages do I use?
@@ -19,4 +17,4 @@
 
 #
 
-![yes](https://i.imgur.com/FaTsvPu.gif)
+![](https://i.imgur.com/FaTsvPu.gif)
