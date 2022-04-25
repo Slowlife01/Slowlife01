@@ -2,7 +2,7 @@
 
 - Working on pretty much nothing.
 
-<sub>*Would appreciate K-Drama recommendation, [MyDramaList](https://mydramalist.com/profile/Slow_Life)*.</sub>
+<sub>Would appreciate K-Drama recommendation, [MyDramaList](https://mydramalist.com/profile/Slow_Life).</sub>
 
 ## The ways to contact me..?
 <sub>Not sure why would you contact me, but alright.</sub>
