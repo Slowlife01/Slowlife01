@@ -17,6 +17,7 @@ if (user == nil)
     abort("Unable to fetch user from the API")
 end
 
+puts user
 
 username = user["username"] + "#" + user["discriminator"]
 newUsername = readmeFile.gsub(oldUsername, username)
