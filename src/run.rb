@@ -13,7 +13,7 @@ readmeFile = File.read("./README.md")
 oldUsername = readmeFile.match(/([a-z]{2,32})[#][0-9]{4}/i)[0]
 
 user = fetchUser()
-if (user == nill)
+if (user == nil)
     abort("Unable to fetch user from the API")
 end
 
