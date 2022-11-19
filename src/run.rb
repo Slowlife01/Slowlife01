@@ -13,7 +13,7 @@ readmeFile = File.read("./README.md")
 oldUsername = readmeFile.match(/([a-z]{2,32})[#][0-9]{4}/i)[0]
 
 user = fetchUser()
-username = user["username"] << "#" << user["discriminator"]
+username = user["username"] + "#" + user["discriminator"]
 newUsername = readmeFile.gsub(oldUsername, username)
 
 if (oldUsername == username) 
