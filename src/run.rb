@@ -14,7 +14,7 @@ oldUsername = readmeFile.match(/([a-z]{2,32})[#][0-9]{4}/i)[0]
 
 user = fetchUser()
 if (not user)
-    return puts "Unable to fetch user from the API"
+    abort "Unable to fetch user from the API"
 end
 
 
