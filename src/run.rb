@@ -10,7 +10,7 @@ def fetchUser
 end
 
 readmeFile = File.read("./README.md")
-oldUsername = readmeFile.match(/([a-z]{2,32})[#][0-9]{4}/i)[0]
+oldUsername = readmeFile.match(/374905512661221377">`(.*)`<\/a>/)[1]
 
 user = fetchUser()
 if (user["username"] == nil)
@@ -19,7 +19,7 @@ if (user["username"] == nil)
     abort("Unable to fetch user from the API")
 end
 
-username = user["username"] + "#" + user["discriminator"]
+username = user["username"]
 newUsername = readmeFile.gsub(oldUsername, username)
 
 if (oldUsername == username) 
