@@ -9,7 +9,7 @@ git config user.name "Slowlife01"
 git config user.email "slowlife1165@gmail.com"
 
 echo "[LOG] Committing"
-git commit -m "feat: new data"
+git commit -m "bot: new username!"
 
 echo "[LOG] Pushing"
 git push origin "main"
