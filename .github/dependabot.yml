@@ -1,9 +1,0 @@
-version: 2
-updates:
-  - package-ecosystem: "bundler"
-    directory: "/"
-    commit-message:
-      prefix: chore
-      include: scope
-    schedule:
-      interval: "daily"
